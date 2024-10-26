@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打磚塊遊戲</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- 引入CSS檔案 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="text-center mt-5">
+            <h1 class="game-title">打磚塊遊戲</h1>
+            <div class="difficulty-container border border-primary rounded p-4 mt-3">
+                <h3>選擇難度</h3>
+                <div class="d-flex justify-content-around mb-3">
+                    <button id="easyButton" class="btn btn-primary" style="width: 200px; height: 50px;">簡單</button>
+                    <button id="mediumButton" class="btn btn-warning" style="width: 200px; height: 50px;">中等</button>
+                    <button id="hardButton" class="btn btn-danger" style="width: 200px; height: 50px;">困難</button>
+                </div>
+            </div>
+            <div id="startButtonContainer" class="d-none mt-3">
+                <button id="startButton" class="btn btn-success start-button">開始遊戲</button>
+            </div>
+        </div>
+        <div id="gameArea" class="d-none">
+            <div id="scoreBoard" class="text-center mb-3">
+                <h2 id="scoreDisplay">分數: 0</h2>
+            </div>
+            <canvas id="gameCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
