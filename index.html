@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打磚塊遊戲</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- 引入CSS檔案 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="text-center mt-5">
+            <h1 class="game-title">打磚塊遊戲</h1>
+            <div class="difficulty-container border border-primary rounded p-4 mt-3">
+                <h3>選擇難度</h3>
+                <div class="d-flex justify-content-around mb-3">
+                    <button id="easyButton" class="btn btn-primary" name="easy" style="width: 200px; height: 50px;">簡單</button>
+                    <button id="mediumButton" class="btn btn-warning" name="medium" style="width: 200px; height: 50px;">中等</button>
+                    <button id="hardButton" class="btn btn-danger" name="hard" style="width: 200px; height: 50px;">困難</button>
+                </div>
+            </div>
+            <div class="theme-container border border-primary rounded p-4 mt-3">
+                <h3>選擇主題</h3>
+                <div class="d-flex justify-content-around mb-3">
+                    <button id="cityThemeButton" class="btn btn-info" style="width: 200px; height: 50px;">都市</button>
+                    <button id="oceanThemeButton" class="btn btn-info" style="width: 200px; height: 50px;">海洋</button>
+                    <button id="spaceThemeButton" class="btn btn-info" style="width: 200px; height: 50px;">宇宙</button>
+                </div>
+            </div>
+            <div id="startButtonContainer" class="mt-3">
+                <button id="startButton" class="btn btn-success start-button" disabled>開始遊戲</button>
+            </div>
+        </div>
+        <div id="gameArea" class="d-none">
+            <div id="titleShow" class="title-container">
+                <div id="levelDisplay" class="text-center mb-3">
+                    <h2 id="levelNumber" style="color: rgba(201, 20, 20, 0.884);">關卡 1</h2>
+                </div>
+                <div id="scoreBoard" class="text-center mb-3">
+                    <h2 id="scoreDisplay">分數: 0   生命: 3</h2>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas" width="800" height="600" style="background-color: rgba(255, 255, 255, 0.7);"></canvas>
+            <!-- <button id="clearBricksButton">一鍵消除磚塊</button> -->
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
