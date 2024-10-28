@@ -24,6 +24,9 @@
 .btn {
     font-size: 1.25rem; /* 按鈕字型大小 */
 }
+button{
+    margin: 20px;
+}
 .theme-container {
     border: 2px solid #007bff; /* 可以改變顏色 */
     border-radius: 10px; /* 圓角 */
@@ -57,4 +60,10 @@ body {
     color: white; /* 文字顏色 */
     border-color: #218838; /* 邊框顏色 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加陰影效果 */
+}
+.container {
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100vh; /* 讓容器佔滿整個視窗高度 */
 }
