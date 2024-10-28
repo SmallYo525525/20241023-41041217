@@ -32,6 +32,9 @@
 body {
     background-size: cover; /* 讓背景圖片覆蓋整個頁面 */
     background-position: center; /* 背景圖片居中 */
+    background-repeat: no-repeat; /* 不重複背景圖片 */
+    height: 100vh; /* 設定頁面高度為 100% 視窗高度 */
+    margin: 0; /* 去掉預設邊距 */
 }
 #gameArea {
     display: flex;
